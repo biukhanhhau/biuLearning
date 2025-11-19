@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Success!</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4A90E2",
+                        "background-light": "#F2F2F7",
+                        "background-dark": "#101622",
+                        "success": "#34C759",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap px-6 sm:px-10 py-4">
+<div class="flex items-center gap-4 text-slate-800 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-[-0.015em] text-slate-800 dark:text-white">WebApp</h2>
+</div>
+</header>
+<main class="flex flex-1 items-center justify-center p-4 sm:p-6 lg:p-8">
+<div class="layout-content-container flex w-full max-w-lg flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-sm p-8 md:p-12 text-center">
+<div class="mb-4 flex size-16 items-center justify-center rounded-full bg-success/20 text-success">
+<span class="material-symbols-outlined text-4xl">
+                            check
+                        </span>
+</div>
+<h1 class="text-slate-900 dark:text-white tracking-tight text-3xl sm:text-4xl font-bold leading-tight pb-3 pt-2">You're All Set!</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal pb-6">Your account has been successfully created. We've sent a confirmation email to you.</p>
+<div class="w-full max-w-md overflow-hidden rounded-lg aspect-video">
+<video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="">
+<source src="https://i.imgur.com/qM25PLh.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
+</div>
+<div class="flex pt-8 justify-center w-full">
+<button class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/90">
+<span class="truncate">Go to Your Dashboard</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="w-full px-6 sm:px-10 py-4 text-center">
+<p class="text-sm text-slate-500 dark:text-slate-400">© 2024 WebApp. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</body></html>

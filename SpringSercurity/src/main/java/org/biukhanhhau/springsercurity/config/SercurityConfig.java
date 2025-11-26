@@ -49,4 +49,11 @@ public class SercurityConfig {
 
         return http.build();
     }
+
+    @Bean
+    public UserDetailsService userDetailsService(){
+        UserDetails admin = User.withDefaultPasswordEncoder().username("bill").password("Mountain@15").roles("ADMIN").build();
+        UserDetails user = User.withDefaultPasswordEncoder().username("guest").password("Mountain@15").roles("USER").build();
+        return new InMemoryUserDetailsManager(admin, user);
+    }
 }
